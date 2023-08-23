@@ -44,7 +44,7 @@ const Product = () => {
                                 src="/P2102.jpg"
                                 width={353}
                                 height={385}
-                                className='brightness-150'
+                                className='brightness-150 mx-auto'
                               />
                             </div>
                         </div>
