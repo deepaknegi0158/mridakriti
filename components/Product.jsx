@@ -41,8 +41,8 @@ const Product = () => {
                         <div className='relative overflow-hidden rounded-2xl h-48 sm:h-60 lg:h-[20rem]'>
                             <div className='absolute inset-0 flex items-center justify-center'>
                             <Image 
-                                src="/P2102.jpg"
-                                width={353}
+                                src="/P2101.jpg"
+                                width={351}
                                 height={385}
                                 className='brightness-150 mx-auto'
                               />
