@@ -23,7 +23,7 @@ const Slider = () => {
           <div>
             <div className='ml-auto md:w-2/3 md:pt-12 lg:w-1/2'>
               <p className='mb-20 text-lg font-light text-white sm:text-2xl xl:leading-normal'>
-                On an endless journey to create experiences that inspire others. Always motived by design that's honest, aesthetic and natural. Probably the only designer you'l ever need.
+                On an endless journey to create experiences that inspire others. Always motived by design that&apos;s honest, aesthetic and natural. Probably the only designer you&apos;ll ever need.
               </p>
               <a href="#our-works" className="rellax relative inline-block py-1.5 text-white before:absolute before:inset-0 before:origin-bottom before:scale-y-[.03] before:bg-white/60 before:transition before:duration-300 hover:before:scale-y-100 hover:before:scale-x-125 hover:before:bg-white/10 scroll-smooth duration-300">
                 <span className="relative">See our work</span>
