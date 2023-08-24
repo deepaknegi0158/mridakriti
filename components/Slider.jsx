@@ -1,5 +1,6 @@
-import React from 'react'
-import Image from 'next/image'
+import React from 'react';
+import Image from 'next/image';
+import Mridakriti from '../public/Mridakriti00.jpg';
 
 const Slider = () => {
   return (
@@ -8,11 +9,14 @@ const Slider = () => {
         <div className='absolute inset-0 z-[1] bg-gradient-to-b from-black/10 via-black/10 to-black'>
         </div>
         <Image
-          src={"/Mridakriti00.jpg"}
-          width={1343}
-          height={691}
           alt='mridakrit'
-          className='fixed inset-0 h-full w-full object-cover'
+          src={Mridakriti}
+          sizes='100vw'
+          style={{
+            objectFit: 'cover',
+            inset: '0px',
+          }}
+          className='fixed h-full w-full'
         />
         <div className='relative z-10 mx-auto max-w-7xl px-6 pb-40 pt-60 lg:px-12 xl:px-6 2xl:px-0'>
           <div className='pb-12'>
@@ -25,7 +29,7 @@ const Slider = () => {
               <p className='mb-20 text-lg font-light text-white sm:text-2xl xl:leading-normal'>
                 On an endless journey to create experiences that inspire others. Always motived by design that&apos;s honest, aesthetic and natural. Probably the only designer you&apos;ll ever need.
               </p>
-              <a href="/our-works" className="rellax relative inline-block py-1.5 text-white before:absolute before:inset-0 before:origin-bottom before:scale-y-[.03] before:bg-white/60 before:transition before:duration-300 hover:before:scale-y-100 hover:before:scale-x-125 hover:before:bg-white/10 scroll-smooth duration-300">
+              <a href="#our-work" className="rellax relative inline-block py-1.5 text-white before:absolute before:inset-0 before:origin-bottom before:scale-y-[.03] before:bg-white/60 before:transition before:duration-300 hover:before:scale-y-100 hover:before:scale-x-125 hover:before:bg-white/10 scroll-smooth duration-300">
                 <span className="relative">See our work</span>
               </a>
             </div>

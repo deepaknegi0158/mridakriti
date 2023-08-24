@@ -15,12 +15,11 @@ const Footer = () => {
                 height={48}
                 alt='mridakriti-logo'
               />
-              {/* <img className="h-12 w-auto" src={Logo} alt="logo mark" width="100" height="100" /> */}
             </a>
             <nav>
               <ul className="flex flex-wrap gap-6 text-sm uppercase tracking-wider text-white">
                 <li>
-                  <a href="#home">Home</a>
+                  <a href="/">Home</a>
                 </li>
                 <li>
                   <a href="#our-works">Work</a>
@@ -29,7 +28,7 @@ const Footer = () => {
                   <a href="#services">Services</a>
                 </li>
                 <li>
-                  <a className="block w-max" href="#about">About us</a>
+                  <a className="block w-max" href="/about">About us</a>
                 </li>
                 <li>
                   <a href="#contact">Contact</a>
