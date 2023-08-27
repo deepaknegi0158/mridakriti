@@ -1,7 +1,8 @@
-import Footer from '@/components/Footer'
-import Navbar from '@/components/Navbar'
-import Product from '@/components/Product'
-import Slider from '@/components/Slider'
+import Navbar from '../../components/Navbar';
+import Slider from '../../components/Slider';
+import Product from '../../components/Product';
+import Footer from '../../components/Footer';
+
 
 export default function Home() {
   return (

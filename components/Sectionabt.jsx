@@ -11,12 +11,12 @@ const Sectionabt = () => {
     return (
         <div className='relative bg-black z-10 pt-[15rem] font-sans'>
             <div>
-                <div className="flex flex-wrap items-center gap-6 mx-auto max-w-7xl px-6 lg:px-12 xl:px-6 2xl:px-0">
+                <div className="flex flex-wrap items-center gap-6 px-14 mx-auto max-w-7xl lg:px-12 xl:px-6 2xl:px-0">
                     <h2 className="text-7xl font-bold text-white xl:text-8xl">
                         {t('about-us')}
                     </h2>
                 </div>
-                <div className='ml-auto md:w-2/3 md:pt-12 lg:w-2/3 px-14'>
+                <div className='ml-auto pt-6 md:pt-12 lg:w-3/4 px-14'>
                     <p className='mb-10 text-base font-light text-white sm:text-lg xl:leading-normal tracking-wide'>
                         {t('about-p1')}
                     </p>
@@ -41,10 +41,10 @@ const Sectionabt = () => {
                         <div className='text-white my-6 text-4xl font-extrabold tracking-tight sm:text-5xl'>The people behind Mridakriti</div>
                     </div>
 
-                    <div className='relative mx-auto max-w-5xl mt-10 flex p-3 gap-[5rem]'>
-                        <div className='border w-1/2 mt-20 bg-slate-50 p-2 rounded-3xl'>
+                    <div className='relative mx-auto max-w-5xl mt-10 flex flex-col md:flex-row px-10 md:px-3 gap-[5rem]'>
+                        <div className='border w-full md:w-1/2 mt-20 bg-slate-50 p-2 rounded-3xl'>
                             <div className='mt-10'>
-                                <div className="z-10 relative mx-auto -mt-[8rem] h-36 w-36 overflow-hidden rounded-full md:h-52 md:w-52 lg:h-52 lg:w-52">
+                                <div className="z-10 relative mx-auto -mt-[8rem] h-48 w-48 overflow-hidden rounded-full md:h-52 md:w-52 lg:h-52 lg:w-52">
                                     <Image
                                         alt='author-01'
                                         src={Auth01}
@@ -65,9 +65,9 @@ const Sectionabt = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className='border w-1/2 mt-20 bg-slate-50 p-2 rounded-3xl'>
+                        <div className='border w-full md:w-1/2 mt-20 bg-slate-50 p-2 rounded-3xl'>
                             <div className='mt-10'>
-                                <div className="z-10 relative mx-auto -mt-[8rem] h-36 w-36 overflow-hidden rounded-full md:h-52 md:w-52 lg:h-52 lg:w-52">
+                                <div className="z-10 relative mx-auto -mt-[8rem] h-48 w-48 overflow-hidden rounded-full md:h-52 md:w-52 lg:h-52 lg:w-52">
                                     <Image
                                         alt='author-02'
                                         src={Auth02}

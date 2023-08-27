@@ -1,5 +1,5 @@
 import React from 'react'
-import Image  from 'next/image'
+import Image from 'next/image'
 
 const Footer = () => {
   return (
@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="mt-8 md:mt-10 lg:mt-14">
           <div className="space-y-8 md:space-y-12">
             <a href="/" className="text-2xl font-light tracking-widest text-white">
-              <Image 
+              <Image
                 src="/Logo.png"
                 width={48}
                 height={48}
