@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import Logo from '../../../public/Logo.png'
 
-const page = () => {
+const Login = () => {
     return (
         <main className="relative flex flex-1 flex-col overflow-hidden px-4 py-8 sm:px-6 lg:px-8">
             <div className="absolute inset-0 text-slate-900/[0.07] [mask-image:linear-gradient(to_bottom_left,white,transparent,transparent)]">
@@ -61,4 +61,4 @@ const page = () => {
     )
 }
 
-export default page
+export default Login

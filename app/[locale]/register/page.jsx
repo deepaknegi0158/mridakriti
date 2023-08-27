@@ -5,7 +5,7 @@ import { useRouter } from 'next/navigation'
 import Image from 'next/image'
 import Logo from '../../../public/Logo.png'
 
-const page = () => {
+const Register = () => {
 
     const [password, setPassword] = useState('');
     const [confirmPassword, setConfirmPassword] = useState('');
@@ -108,4 +108,4 @@ const page = () => {
     )
 }
 
-export default page
+export default Register
