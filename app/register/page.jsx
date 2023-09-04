@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from 'react'
 import { useRouter } from 'next/navigation'
 import Image from 'next/image'
-import Logo from '../../../public/Logo.png'
+import Logo from '../../public/Logo.png'
 
 const Register = () => {
 

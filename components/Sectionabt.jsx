@@ -1,28 +1,53 @@
+"use client"
 import React from 'react'
+import { useLanguage } from '../app/LanguageContext'
 import Image from 'next/image';
-import { useTranslations } from 'next-intl';
 import Auth01 from '../public/Auth2408.jpg'
 import Auth02 from '../public/Auth2508.jpg'
 
 const Sectionabt = () => {
 
-    const t = useTranslations('header');
+    const { lang } = useLanguage();
 
     return (
         <div className='relative bg-black z-10 pt-[15rem] font-sans'>
             <div>
                 <div className="flex flex-wrap items-center gap-6 px-14 mx-auto max-w-7xl lg:px-12 xl:px-6 2xl:px-0">
                     <h2 className="text-7xl font-bold text-white xl:text-8xl">
-                        {t('about-us')}
+                        {lang === 'en' ? (
+                            <div>
+                                About us
+                            </div>
+                        ) : (
+                            <div>
+                                हमारे बारे में
+                            </div>
+                        )}
                     </h2>
                 </div>
                 <div className='ml-auto pt-6 md:pt-12 lg:w-3/4 px-14'>
-                    <p className='mb-10 text-base font-light text-white sm:text-lg xl:leading-normal tracking-wide'>
-                        {t('about-p1')}
-                    </p>
-                    <p className='mb-10 text-base font-light text-white sm:text-lg xl:leading-normal tracking-wide'>
-                        {t('about-p2')}
-                    </p>
+                    <div className='mb-10 text-base font-light text-white sm:text-lg xl:leading-normal tracking-wide'>
+                        {lang === 'en' ? (
+                            <div>
+                                Welcome to Mridakriti, where art comes to life through the vibrant and earthy medium of soil. Our passion is to create exquisite paintings that not only captivate the eyes but also resonate with the soul.
+                            </div>
+                        ) : (
+                            <div>
+                                मृदाकृति में आपका स्वागत है, जहां कला मिट्टी के जीवंत और पार्थिव माध्यम से जीवंत होती है। हमारा जुनून उत्कृष्ट पेंटिंग बनाना है जो न केवल आंखों को लुभाती हैं बल्कि आत्मा में भी गूंजती हैं।
+                            </div>
+                        )}
+                    </div>
+                    <div className='mb-10 text-base font-light text-white sm:text-lg xl:leading-normal tracking-wide'>
+                        {lang === 'en' ? (
+                            <div>
+                                At Mridakriti, we believe that art is a powerful means of connecting with nature and expressing our deepest emotions. Our journey began with a simple yet profound idea: to harness the natural beauty of soil and transform it into stunning works of art. Through meticulous craftsmanship and boundless creativity, we bring to life scenes that evoke feelings of nostalgia, wonder, and serenity.
+                            </div>
+                        ) : (
+                            <div>
+                                मृदाकृति में, हम मानते हैं कि कला प्रकृति से जुड़ने और हमारी गहरी भावनाओं को व्यक्त करने का एक शक्तिशाली साधन है। हमारी यात्रा एक सरल लेकिन गहन विचार के साथ शुरू हुई: मिट्टी की प्राकृतिक सुंदरता का दोहन करना और इसे कला के आश्चर्यजनक कार्यों में बदलना। सूक्ष्म शिल्प कौशल और असीम रचनात्मकता के माध्यम से, हम उन दृश्यों को जीवंत करते हैं जो पुरानी यादों, आश्चर्य और शांति की भावनाएँ पैदा करते हैं।
+                            </div>
+                        )}
+                    </div>
                 </div>
             </div>
 
