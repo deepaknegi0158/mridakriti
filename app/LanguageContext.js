@@ -13,7 +13,7 @@ export const LanguageProvider = ({ children }) => {
                 setLang(storedLang);
             }
         }
-    })
+    }, []);
 
     const changeLang = (newLang) => {
         if (typeof window !== 'undefined') {
