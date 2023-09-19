@@ -8,9 +8,10 @@ export const metadata = {
 }
 
 const About = () => {
+  const sectionOffsets = [0, 640]
   return (
     <>
-      <Navbar />
+      <Navbar sectionOffsets={sectionOffsets}/>
       <Sectionabt />
       <Footer />
     </>

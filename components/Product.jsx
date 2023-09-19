@@ -49,7 +49,7 @@ const Product = () => {
                                         Shri Kedarnath ji
                                     </div>
                                 ) : (
-                                    <div>
+                                    <div className='hindi'>
                                         श्री केदारनाथ जी
                                     </div>
                                 )}
@@ -60,12 +60,12 @@ const Product = () => {
                                         Idol made of holy soil of Baba Shri Kedarnath ji and divine water of Ganga Maiya.
                                     </div>
                                 ) : (
-                                    <div>
+                                    <div className='hindi'>
                                         बाबा श्री केदारनाथ जी  की पवित्र माटी एवं गंगे मैया के दिव्य जल से निर्मित आकृति ।
                                     </div>
                                 )}
                             </div>
-                            <a href="#our-works" className="relative inline-block mt-4 py-1.5 text-white before:absolute before:inset-0 before:origin-bottom before:scale-y-[.03] before:bg-white/60 before:transition before:duration-300 hover:before:scale-y-100 hover:before:scale-x-125 hover:before:bg-white/20">
+                            <a href="/products/1" className="relative inline-block mt-4 py-1.5 text-white before:absolute before:inset-0 before:origin-bottom before:scale-y-[.03] before:bg-white/60 before:transition before:duration-300 hover:before:scale-y-100 hover:before:scale-x-125 hover:before:bg-white/20">
                                 <span className="relative">Buy Now</span>
                             </a>
                         </div>
@@ -87,7 +87,7 @@ const Product = () => {
                                         Shri Badrinath ji
                                     </div>
                                 ) : (
-                                    <div>
+                                    <div className='hindi'>
                                         श्री बद्रीनाथ जी
                                     </div>
                                 )}
@@ -98,7 +98,7 @@ const Product = () => {
                                         Idol made from holy soil of Baikund Dham Shri Badrinath and divine water of Satopanth.
                                     </div>
                                 ) : (
-                                    <div>
+                                    <div className='hindi'>
                                         बैकुण्ड धाम श्री बद्रीनाथ जी  की पवित्र माटी एवं सतोपंथ के दिव्य जल से निर्मित आकृति  ।
                                     </div>
                                 )}
