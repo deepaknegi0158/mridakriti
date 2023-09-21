@@ -1,6 +1,7 @@
 "use client"
 import React, { useEffect, useState } from 'react'
 import { useLanguage } from '../app/LanguageContext'
+import {createHandleScroll} from '../lib/ScrollHelper'
 import Image from 'next/image'
 import Logo from '../public/Logo.png'
 
@@ -14,23 +15,14 @@ const Navbar = (props) => {
 
     const [isDarkBackground, setIsDarkBackground] = useState(true);
     const sectionOffsets = props.sectionOffsets;
+    const handleScrollFunction = createHandleScroll(sectionOffsets, setIsDarkBackground);
     useEffect(() => {
-        const handleScroll = () => {
-            const scrollTop = window.scrollY;
-            for (let i = sectionOffsets.length - 1; i >= 0; i--) {
-                if (scrollTop >= sectionOffsets[i]) {
-                    setIsDarkBackground(i % 2 === 0);
-                    break;
-                }
-            }
-        };
-
-        window.addEventListener('scroll', handleScroll);
+        window.addEventListener('scroll', handleScrollFunction);
 
         return () => {
-            window.removeEventListener('scroll', handleScroll);
+            window.removeEventListener('scroll', handleScrollFunction);
         };
-    }, []);
+    }, [handleScrollFunction]);
 
     const navbarTextColor = isDarkBackground ? 'text-white' : 'text-black';
 

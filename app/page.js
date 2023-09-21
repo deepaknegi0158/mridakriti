@@ -6,7 +6,7 @@ import Feedback from '../components/Feedback';
 import Join from '../components/Joinus';
 
 export default function Home() {
-  const sectionOffsets = [0, 1670, 2580]
+  const sectionOffsets = [0, 1704, 2574]
   return (
     <main className='font-sans'>
       <Navbar sectionOffsets={sectionOffsets} />
