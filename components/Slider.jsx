@@ -1,5 +1,5 @@
 "use client"
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
 import Mridakriti from '../public/Mridakriti00.jpg';
 import { useLanguage } from '../app/LanguageContext';
@@ -9,6 +9,8 @@ import Whatsapp from '../public/whatsapp.svg';
 
 const Slider = () => {
     const { lang } = useLanguage();
+    const [animate, setAnimate] = useState(false);
+
     return (
         <section className='relative w-full mx-0 overflow-hidden'>
             <div className='relative flex min-h-screen items-center'>
@@ -22,17 +24,17 @@ const Slider = () => {
                         objectFit: 'cover',
                         inset: '0px',
                     }}
-                    className='fixed h-full w-full'
+                    className='fixed h-full w-full animate-fadein'
                 />
                 <div className='relative z-10 mx-auto max-w-7xl px-6 pb-40 pt-60 lg:px-12 xl:px-6 2xl:px-0'>
                     <div className='pb-12'>
-                        <h1 className='text-6xl font-bold text-white sm:text-8xl md:text-9xl xl:leading-tight'>
+                        <h1 className='text-6xl font-bold text-white sm:text-8xl md:text-9xl xl:leading-tight slideInLeft'>
                             Creative Duo
                         </h1>
                     </div>
                     <div>
                         <div className='ml-auto md:w-2/3 md:pt-12 lg:w-1/2'>
-                            <div className='mb-20 text-lg font-light text-white sm:text-2xl xl:leading-normal'>
+                            <div className='mb-20 text-lg font-light text-white slideInRight sm:text-2xl xl:leading-normal'>
                                 {lang === 'en' ? (
                                     <p>
                                         On an endless journey to create experiences that inspire others. Always motived by design that&apos;s honest, aesthetic and natural. Probably the only designer you&apos;ll ever need.

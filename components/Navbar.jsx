@@ -8,14 +8,18 @@ import Logo from '../public/Logo.png'
 const Navbar = (props) => {
 
     const { lang, changeLang } = useLanguage();
+
+    // Navbar expanded section 
     const [isExpanded, setIsExpanded] = useState(false);
     const handleExpand = () => {
         setIsExpanded(!isExpanded);
     }
 
+    // Navbar text color change
     const [isDarkBackground, setIsDarkBackground] = useState(true);
     const sectionOffsets = props.sectionOffsets;
     const handleScrollFunction = createHandleScroll(sectionOffsets, setIsDarkBackground);
+    
     useEffect(() => {
         window.addEventListener('scroll', handleScrollFunction);
 
