@@ -91,7 +91,7 @@ const Navbar = (props) => {
 
                         <button
                             onClick={handleExpand}
-                            className='flex my-auto'>
+                            className='flex my-auto hover:opacity-80'>
                             {lang === 'en' ? (
                                 <div className='mx-1'>English</div>
                             ) : (

@@ -38,7 +38,7 @@ const Product = () => {
                                         maxWidth: '100%',
                                         objectFit: 'cover',
                                     }}
-                                    className='brightness-150'
+                                    className='mx-0'
                                 />
                             </div>
                         </div>
@@ -65,7 +65,7 @@ const Product = () => {
                                     </div>
                                 )}
                             </div>
-                            <a href="/products/1" className="relative inline-block mt-4 py-1.5 text-white before:absolute before:inset-0 before:origin-bottom before:scale-y-[.03] before:bg-white/60 before:transition before:duration-300 hover:before:scale-y-100 hover:before:scale-x-125 hover:before:bg-white/20">
+                            <a href="/products?_id=1" className="relative inline-block mt-4 py-1.5 text-white before:absolute before:inset-0 before:origin-bottom before:scale-y-[.03] before:bg-white/60 before:transition before:duration-300 hover:before:scale-y-100 hover:before:scale-x-125 hover:before:bg-white/20">
                                 <span className="relative">Buy Now</span>
                             </a>
                         </div>
@@ -76,7 +76,7 @@ const Product = () => {
                                 <Image
                                     alt='product-2'
                                     src={Product2}
-                                    className='brightness-150 mx-auto'
+                                    className='mx-auto'
                                 />
                             </div>
                         </div>
@@ -103,7 +103,7 @@ const Product = () => {
                                     </div>
                                 )}
                             </div>
-                            <a href="#our-works" className="rellax relative inline-block mt-4 py-1.5 text-white before:absolute before:inset-0 before:origin-bottom before:scale-y-[.03] before:bg-white/60 before:transition before:duration-300 hover:before:scale-y-100 hover:before:scale-x-125 hover:before:bg-white/20">
+                            <a href="/products?_id=2" className="rellax relative inline-block mt-4 py-1.5 text-white before:absolute before:inset-0 before:origin-bottom before:scale-y-[.03] before:bg-white/60 before:transition before:duration-300 hover:before:scale-y-100 hover:before:scale-x-125 hover:before:bg-white/20">
                                 <span className="relative">Buy Now</span>
                             </a>
                         </div>

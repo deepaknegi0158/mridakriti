@@ -109,7 +109,7 @@ const Carousel = () => {
             </div> */}
 
 
-            {/* <div className="relative bg-white z-10 sm:px-6 px-4 py-4 h-[30rem]">
+            <div className="relative bg-white z-10 sm:px-6 px-4 py-4 h-[30rem]">
                 <div className='mx-10 mt-10 text-6xl max-w-3xl'>
                     Here's what past clients are saying about us
                 </div>
@@ -171,7 +171,7 @@ const Carousel = () => {
                         ))}
                     </div>
                 </div>
-            </div> */}
+            </div>
 
 
             {/* section 2 demo */}

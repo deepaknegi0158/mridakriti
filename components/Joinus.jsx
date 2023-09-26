@@ -62,12 +62,12 @@ const Join = () => {
                         
                         <div className="mt-4 sm:relative sm:flex sm:items-center sm:py-0.5 sm:pr-2.5">
                             <div className="relative sm:static sm:flex-auto">
-                                <input type="email" id="email-address" required="" aria-label="Email address" placeholder="Email address" className="peer relative z-10 w-full appearance-none bg-transparent px-4 py-2 text-base text-white placeholder:text-white/70 focus:outline-none sm:py-3" />
+                                <input type="email" id="email-address" required="" aria-label="Email address" placeholder="Email address" className="peer rounded-lg relative z-10 w-full appearance-none bg-transparent px-6 mx-[0.15rem] py-2 text-base text-white focus:outline-none sm:py-3" />
 
                                 <div className="absolute inset-0 rounded-md border border-gray-500 peer-focus:border-blue-300 sm:rounded-xl">
                                 </div>
                             </div>
-                            <button className="inline-flex justify-center rounded-md py-1 px-4 text-base font-semibold tracking-tight shadow-sm focus:outline-none bg-white text-blue-600 hover:text-blue-700 focus-visible:text-blue-900 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white active:bg-blue-50 active:text-blue-900/80 disabled:opacity-40 disabled:hover:text-blue-600 mt-4 w-full sm:relative sm:z-10 sm:mt-0 sm:w-auto sm:flex-none" type="submit">Join with us</button></div>
+                            <button className="inline-flex justify-center rounded-md py-1 px-4 mx-1 text-base font-semibold tracking-tight shadow-sm focus:outline-none bg-white text-blue-600 hover:text-blue-700 focus-visible:text-blue-900 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white active:text-blue-900/80 disabled:opacity-40 disabled:hover:text-blue-600 mt-4 w-full sm:relative sm:z-10 sm:mt-0 sm:w-auto sm:flex-none" type="submit">Join with us</button></div>
                     </form>
                 </div>
             </div>

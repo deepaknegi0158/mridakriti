@@ -26,7 +26,7 @@
     height: 100px;
     background-size: cover;
     background-repeat: no-repeat;
-    animation: zoomIn 6s ease-in-out; /* Add a zooming animation */
+    animation: zoomIn 5s ease-in-out; /* Add a zooming animation */
   }
   @keyframes zoomIn {
     0% {
