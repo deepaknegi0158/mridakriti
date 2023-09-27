@@ -45,71 +45,8 @@ const Carousel = () => {
     }
 
     return (
-        <>
-
-            {/* <div className='relative mx-auto bg-white'>
-                <div className='mx-10 pt-10 text-6xl max-w-3xl'>
-                    Here's what past clients are saying about us
-                </div>
-                <div className="pb-8 max-w-4xl mx-auto px-4 md:px-6">
-                    <div className='relative mt-10'>
-                        <div className="relative px-6 pb-4 md:px-12 md:pb-0">
-                            <div className='touch-pan-y pt-[7rem] mb-20'>
-                                <div className='flex relative w-full h-full z-10 transform box-content'>
-
-                                    {slides.map((slide, index) => (
-                                        <div
-                                            key={index}
-                                            className={`absolute flex h-full w-full space-x-6 items-center justify-center translate-3d 
-                                ${index === currentIndex ? 'opacity-100' : 'opacity-0'} 
-                                ${index === currentIndex ? 'translate-x-0 duration-1000' : 'translate-x-full'} `}
-
-                                        >
-                                            <div className='z-10 relative mx-auto w-[28rem]'>
-                                                <div className='p-2'>
-                                                    <Image
-                                                        alt='author-01'
-                                                        src={slide.imageSrc}
-                                                        className='rounded-full'
-                                                    />
-                                                </div>
-                                                <div className='absolute right-0 bottom-0 mr-4 mb-4'>
-                                                    <div className='flex gap-1 items-center bottom-full bg-white shadow-xl rounded-full px-3 py-[0.15rem]'>
-                                                        <Image
-                                                            src={Twitter}
-                                                            alt='twitter-logo'
-                                                            width={20}
-                                                            height={20}
-                                                        />
-                                                        {slide.author}
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div className="relative text-black text-xl font-sans h-auto">{slide.text}</div>
-                                        </div>
-                                    ))
-                                    }
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className='relative mx-20 left-[90%] top-3 z-[11]'>
-                        <div className="flex transform">
-                            {slides.map((_, index) => (
-                                <button
-                                    key={index}
-                                    className={`w-2 h-2 mx-1 rounded-full focus:outline-none ${index === currentIndex ? 'bg-gray-600' : 'bg-gray-300'
-                                        }`}
-                                    onClick={() => goToSlide(index)}
-                                ></button>
-                            ))}
-                        </div>
-                    </div>
-                </div>
-            </div> */}
-
-
-            <div className="relative bg-white z-10 sm:px-6 px-4 py-4 h-[30rem]">
+        <section>
+            {/* <div className="relative bg-white z-10 sm:px-6 px-4 py-4 h-[30rem]">
                 <div className='mx-10 mt-10 text-6xl max-w-3xl'>
                     Here's what past clients are saying about us
                 </div>
@@ -171,7 +108,7 @@ const Carousel = () => {
                         ))}
                     </div>
                 </div>
-            </div>
+            </div> */}
 
 
             {/* section 2 demo */}
@@ -372,7 +309,7 @@ const Carousel = () => {
                     </ul>
                 </div>
             </div>
-        </>
+        </section>
 
     );
 };
