@@ -4,11 +4,14 @@ import Image from 'next/image';
 import Navbar from '../../components/Navbar';
 import { productData } from '../../constants/data';
 import Footer from '../../components/Footer';
+import { useLanguage } from '../LanguageContext';
 
 type Props = {
     searchParams: { [key: string]: string | string[] | undefined }
 }
 const Products = ({ searchParams }: Props) => {
+
+    const { lang } = useLanguage();
 
     // fetching product using url and productData
     const idString = searchParams?._id;
@@ -59,8 +62,8 @@ const Products = ({ searchParams }: Props) => {
             </div> */}
 
             <div className="bg-black text-white mx-auto p-4 pt-[14rem] px-20 pb-[14rem]">
-                <div className="flex justify-center">
-                    <div className="flex flex-wrap space-y-1">
+                <div className="flex md:flex-row flex-col justify-center">
+                    <div className=" hidden lg:flex flex-wrap space-y-1 w-[10rem] mr-5">
                         {product?.image.map((image, index) => (
                             <div
                                 key={index}
@@ -68,15 +71,15 @@ const Products = ({ searchParams }: Props) => {
                                     }`}
                                 onClick={() => handleImageCLick(image)}
                             >
-                                <Image 
-                                src={image} 
-                                alt={`Thumbnail ${index}`} 
-                                className='rounded-xl'/>
+                                <Image
+                                    src={image}
+                                    alt={`Thumbnail ${index}`}
+                                    className='rounded-xl' />
                             </div>
                         ))}
                     </div>
 
-                    <div className="flex justify-center items-center px-10 w-1/2">
+                    <div className="flex justify-center items-center md:w-1/2 w-full h-auto">
                         <Image src={selectedImage}
                             alt="Main Product Image"
                             className='m-0 rounded-xl'
@@ -84,13 +87,21 @@ const Products = ({ searchParams }: Props) => {
                     </div>
 
 
-                    <div className="ml-4 w-1/2">
-                        <h1 className="text-2xl font-bold">
-                            {product?.title}
-                        </h1>
-                        <p className="text-gray-200 mt-4">
-                            {product?.description}
-                        </p>
+                    <div className="md:ml-10 md:w-1/2 w-full md:mt-0 mt-5">
+                        <div className="text-2xl font-semibold">
+                            {lang === 'en' ? (
+                                <h2>{product?.title_en}</h2>
+                            ) : (
+                                <h2>{product?.title_hn}</h2>
+                            )}
+                        </div>
+                        <div className="text-gray-200 mt-4">
+                            {lang === 'en' ? (
+                                <p>{product?.description_en}</p>
+                            ) : (
+                                <p>{product?.description_hn}</p>
+                            )}
+                        </div>
                         <p className='mt-4'>
                             {product?.price}
                         </p>
