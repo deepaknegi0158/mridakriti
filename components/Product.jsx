@@ -46,24 +46,26 @@ const Product = () => {
                             <h3 className="text-xl font-medium tracking-tight text-slate-200">
                                 {lang === 'en' ? (
                                     <div>
-                                        Shri Kedarnath ji
+                                        Shri Badrinath ji
                                     </div>
                                 ) : (
                                     <div className='hindi'>
-                                        श्री केदारनाथ जी
+                                        श्री बद्रीनाथ जी
                                     </div>
                                 )}
+
                             </h3>
                             <div className="mt-2 text-base text-slate-400">
                                 {lang === 'en' ? (
                                     <div>
-                                        Idol made of holy soil of Baba Shri Kedarnath ji and divine water of Ganga Maiya.
+                                        Idol made from holy soil of Baikund Dham Shri Badrinath and divine water of Satopanth.
                                     </div>
                                 ) : (
                                     <div className='hindi'>
-                                        बाबा श्री केदारनाथ जी  की पवित्र माटी एवं गंगे मैया के दिव्य जल से निर्मित आकृति ।
+                                        बैकुण्ड धाम श्री बद्रीनाथ जी  की पवित्र माटी एवं सतोपंथ के दिव्य जल से निर्मित आकृति  ।
                                     </div>
                                 )}
+
                             </div>
                             <a href="/products?_id=1" className="relative inline-block mt-4 py-1.5 text-white before:absolute before:inset-0 before:origin-bottom before:scale-y-[.03] before:bg-white/60 before:transition before:duration-300 hover:before:scale-y-100 hover:before:scale-x-125 hover:before:bg-white/20">
                                 <span className="relative">Buy Now</span>
@@ -84,22 +86,22 @@ const Product = () => {
                             <h3 className="text-xl font-medium tracking-tight text-slate-200">
                                 {lang === 'en' ? (
                                     <div>
-                                        Shri Badrinath ji
+                                        Shri Kedarnath ji
                                     </div>
                                 ) : (
                                     <div className='hindi'>
-                                        श्री बद्रीनाथ जी
+                                        श्री केदारनाथ जी
                                     </div>
                                 )}
                             </h3>
                             <div className="mt-2 text-base text-slate-400">
                                 {lang === 'en' ? (
                                     <div>
-                                        Idol made from holy soil of Baikund Dham Shri Badrinath and divine water of Satopanth.
+                                        Idol made of holy soil of Baba Shri Kedarnath ji and divine water of Ganga Maiya.
                                     </div>
                                 ) : (
                                     <div className='hindi'>
-                                        बैकुण्ड धाम श्री बद्रीनाथ जी  की पवित्र माटी एवं सतोपंथ के दिव्य जल से निर्मित आकृति  ।
+                                        बाबा श्री केदारनाथ जी  की पवित्र माटी एवं गंगे मैया के दिव्य जल से निर्मित आकृति ।
                                     </div>
                                 )}
                             </div>
