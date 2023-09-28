@@ -73,7 +73,7 @@ const Product = () => {
                         </div>
                     </li>
                     <li className='grid auto-rows-min grid-cols-1 items-center gap-8 px-3 sm:grid-cols-2 sm:gap-y-10 lg:grid-cols-1 xl:px-12'>
-                        <div className='relative overflow-hidden rounded-2xl h-48 sm:h-60 lg:h-[20rem]'>
+                        <div className='relative overflow-hidden rounded-2xl h-[20rem] lg:h-[20rem]'>
                             <div className='absolute inset-0 flex items-center justify-center'>
                                 <Image
                                     alt='product-2'
