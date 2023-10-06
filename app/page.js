@@ -5,13 +5,10 @@ import Image from 'next/image'
 import Navbar from '../components/Navbar';
 import Slider from '../components/Slider';
 import Product from '../components/Product';
-import ProductList from '../components/ProductList';
-import { productData } from '../constants/data';
 import Footer from '../components/Footer';
 import Feedback from '../components/Feedback';
 import Join from '../components/Joinus';
 import Logo from '../public/Logo.png'
-
 import { useLoadingAnimation } from '../lib/LoadingAnimation';
 
 export default function Home() {
