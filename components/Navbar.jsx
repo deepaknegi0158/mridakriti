@@ -1,7 +1,7 @@
 "use client"
 import React, { useEffect, useState } from 'react'
 import { useLanguage } from '../app/LanguageContext'
-import {createHandleScroll} from '../lib/ScrollHelper'
+import { createHandleScroll } from '../lib/ScrollHelper'
 import Image from 'next/image'
 import Logo from '../public/Logo.png'
 
@@ -19,7 +19,7 @@ const Navbar = (props) => {
     const [isDarkBackground, setIsDarkBackground] = useState(true);
     const sectionOffsets = props.sectionOffsets;
     const handleScrollFunction = createHandleScroll(sectionOffsets, setIsDarkBackground);
-    
+
     useEffect(() => {
         window.addEventListener('scroll', handleScrollFunction);
 
@@ -59,6 +59,7 @@ const Navbar = (props) => {
                     <a href="/about" className='px-4 py-2 mx-2 cursor-pointer relative hover:text-orange-500'>About</a>
                     <a href="/about" className='px-4 py-2 mx-2 cursor-pointer relative hover:text-orange-500'>Feature</a>
                     <a href="/about" className='px-4 py-2 mx-2 cursor-pointer relative hover:text-orange-500'>Pricing</a>
+                    <a href="/about" className='px-4 py-2 mx-2 cursor-pointer relative hover:text-orange-500'>Testimonial</a>
                     <a href="/about" className='px-4 py-2 mx-2 cursor-pointer relative hover:text-orange-500'>Testimonial</a>
                 </ul>
                 <div className='col-start-10 col-end-12 font-medium md:flex justify-end items-center hidden'>
@@ -104,7 +105,7 @@ const Navbar = (props) => {
                                 <path d="m6 9 6 6 6-6" />
                             </svg>
 
-                        
+
                         </button>
 
                         {isExpanded && (
